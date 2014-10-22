@@ -1,0 +1,15 @@
+name: NoRains
+version: 0.1
+main: org.noiprasit.norains.NoRains
+description: preventing rain
+commands:
+  norain:
+    aliases: [nr]
+    description: prevent weather to change to a raining state
+    usage: nr <on|off>
+    permission: norains.use
+    permission-usage: You do not have appropriate permission... bad!
+permissions:
+  norains.use:
+    description: permission for norains command
+    default: op
