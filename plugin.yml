@@ -1,9 +1,9 @@
 name: NoRains
-version: 0.1
+version: 0.2
 main: org.noiprasit.norains.NoRains
 description: preventing rain
 commands:
-  norain:
+  norains:
     aliases: [nr]
     description: prevent weather to change to a raining state
     usage: nr <on|off>

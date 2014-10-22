@@ -13,8 +13,11 @@ public class WeatherChangeListener implements Listener {
 
 	@EventHandler
 	public void onWeatherChange(WeatherChangeEvent event) {
-		if(event.toWeatherState()) {
-			event.setCancelled(true);
+		if(!plugin.getLetItRain()) {
+			if(event.toWeatherState()) {
+				event.setCancelled(true);
+				plugin.setLetItRain(false);
+			}
 		}
 	}
 
